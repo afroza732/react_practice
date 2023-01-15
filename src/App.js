@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Child from './components/STATE_LIFTING/Child';
 // import Card from './components/Card';
 // import data from "./data"
 // import List from "./components/uniqueList/List"
@@ -12,10 +14,13 @@ import React from 'react';
 //import EVENT_HANDLER from './components/EVENT_HANDLER';
 //import EVENT_HANDLER_Binding from './components/EVENT_HANDLER_Binding';
 //import USESTATE_HOOKS from './components/USESTATE_HOOKS';
-import FORMS from './components/FORMS';
+// import FORMS from './components/FORMS';
 export default function App(){
+    const handleChildData = (childData) => {
+      console.log(childData);
+    }
     return <>
-        <FORMS />
+      <Child onChildData={handleChildData}/>
         {/* <Card1 name="Afroza Nisha"/> */}
       {/* <h1 className='headingStyle'>My app</h1>
       {data.map((item,index) => <Card key={index} titleText={item.title} titleDesc={item.desc}/>)} */}
