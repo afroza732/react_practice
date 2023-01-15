@@ -1,25 +1,14 @@
 import React, { useState } from 'react'
 import style from './form.module.css';
 export default function FORMS() {
-    const [name,setName] = useState('');
-    const [email,setEmail] = useState('');
-    const [password,setPassword] = useState('');
-
-    const nameChange = (e) => {
-        setName(e.target.value);
-    }
-    const emailChange = (e) => {
-        setEmail(e.target.value);
-    }
-    const passwordChange = (e) => {
-        setPassword(e.target.value);
+    const [user,setUser] = useState({name:'','email':'',password:''});
+    const {name,email,password} = user;
+    const handleChange = (e) => {
+        setUser({...user,[e.target.name]:e.target.value});
     }
     const formSubmit = (e) => {
         e.preventDefault();
-        let userInfo = {
-            name,email,password
-        }
-        console.log(userInfo);
+        console.log(user);
     }
     return (
         <div>
@@ -27,15 +16,15 @@ export default function FORMS() {
             <form action='' onClick={formSubmit}>
                 <div className={style.formGroup}>
                     <label>Name : </label>
-                    <input type="text" onChange={nameChange} value={name} />
+                    <input type="text" onChange={handleChange} value={name} name="name"/>
                 </div>
                 <div className={style.formGroup}>
                     <label>Email : </label>
-                    <input type="text" onChange={emailChange} value={email} />
+                    <input type="text" onChange={handleChange} value={email} name="email"/>
                 </div>
                 <div className={style.formGroup}>
                     <label>Password : </label>
-                    <input type="password" onChange={passwordChange} value={password} />
+                    <input type="password" onChange={handleChange} value={password} name="password"/>
                 </div>
                 <div className={style.formGroup}>
                 <button>Save</button>
