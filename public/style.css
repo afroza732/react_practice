@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black !important;
+    color: white !important;
+}
+/* .headingStyle{
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card{
+    background-color: #FAD7A0 ;
+    box-shadow: 2px 4px 4px gray;
+    margin: 10px;
+    padding: 10px;
+    width: 390px;
+    display: inline block;
+}
+.card-title{
+    text-align: center;
+}
+.card-desc{
+    text-align: justify;
+}
+
+.card-date{
+    text-align: center;
+    font-weight: bold;
+} */
+
+.btnStyle{
+    background-color: red;
+    padding: 0px 10px 0px 10px;
+    background: gainsboro
+}
