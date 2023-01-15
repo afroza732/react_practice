@@ -9,10 +9,11 @@ import React from 'react';
 //import { FaJs, FaFacebook } from "react-icons/fa";
 // import CONDITIONAL_RENDERING from "./components/CONDITIONAL_RENDERING/index"
 // import STATE from './components/STATE';
-import EVENT_HANDLER from './components/EVENT_HANDLER';
+//import EVENT_HANDLER from './components/EVENT_HANDLER';
+import EVENT_HANDLER_Binding from './components/EVENT_HANDLER_Binding';
 export default function App(){
     return <>
-        <EVENT_HANDLER />
+        <EVENT_HANDLER_Binding />
         {/* <Card1 name="Afroza Nisha"/> */}
       {/* <h1 className='headingStyle'>My app</h1>
       {data.map((item,index) => <Card key={index} titleText={item.title} titleDesc={item.desc}/>)} */}
