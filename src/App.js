@@ -11,10 +11,11 @@ import React from 'react';
 // import STATE from './components/STATE';
 //import EVENT_HANDLER from './components/EVENT_HANDLER';
 //import EVENT_HANDLER_Binding from './components/EVENT_HANDLER_Binding';
-import USESTATE_HOOKS from './components/USESTATE_HOOKS';
+//import USESTATE_HOOKS from './components/USESTATE_HOOKS';
+import FORMS from './components/FORMS';
 export default function App(){
     return <>
-        <USESTATE_HOOKS />
+        <FORMS />
         {/* <Card1 name="Afroza Nisha"/> */}
       {/* <h1 className='headingStyle'>My app</h1>
       {data.map((item,index) => <Card key={index} titleText={item.title} titleDesc={item.desc}/>)} */}
