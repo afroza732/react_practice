@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+.error{
+    color: red;
+    font-size: 13px;
+}
 /* .headingStyle{
     background-color: purple;
     color: white;
