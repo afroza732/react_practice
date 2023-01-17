@@ -13,6 +13,7 @@ const SIGNUP = () => {
   } = useFormik({
     initialValues:{
       name:'',
+      
       email:'',
       password:''
     },
